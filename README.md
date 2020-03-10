@@ -156,5 +156,6 @@ Feedstock Maintainers
 
 * [@StephanSiemen](https://github.com/StephanSiemen/)
 * [@dtip](https://github.com/dtip/)
+* [@iainrussell](https://github.com/iainrussell/)
 * [@sylvielamythepaut](https://github.com/sylvielamythepaut/)
 

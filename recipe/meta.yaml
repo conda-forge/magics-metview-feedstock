@@ -1,5 +1,5 @@
 {% set name = "Magics" %}
-{% set version = "4.3.1" %}
+{% set version = "4.3.2" %}
 
 package:
   name: magics-metview
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://confluence.ecmwf.int/download/attachments/3473464/{{ name }}-{{ version }}-Source.tar.gz
-  sha256: b1995e2f5bf24943715446d1302cc5d7de4cacfe4cee7c3cfd1037ac183cd181
+  sha256: 91aa0f4e0497c91c3f7b6a7b3ab2de748a7a150f8ed5cabfe6fc709cccf15ebf
   patches:
 
 build:
-  number: 2
-  skip: True  # [win]
+  number: 0
+  skip: true  # [win]
   detect_binary_files_with_prefix: true
   run_exports:
     # See https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#export-runtime-requirements
@@ -78,7 +78,7 @@ about:
     - LICENSE
 
   license_family: Apache
-  summary: "ECMWF's Meteorological plotting software Magics built with Metview enabled"
+  summary: ECMWF's Meteorological plotting software Magics built with Metview enabled
 
 extra:
   recipe-maintainers:

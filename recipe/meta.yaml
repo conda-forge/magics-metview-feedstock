@@ -1,5 +1,5 @@
 {% set name = "Magics" %}
-{% set version = "4.3.3" %}
+{% set version = "4.4.0" %}
 
 package:
   name: magics-metview
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://confluence.ecmwf.int/download/attachments/3473464/{{ name }}-{{ version }}-Source.tar.gz
-  sha256: 27d3de71cf41f3d557fd85dabaea2baaab34c4c6422a5b5b15071a6a53387601
+  sha256: 544058cd334f3e28a16d00ea7811e13cdf282f9c1ebec2ad7868171d925abd24
   patches:
 
 build:

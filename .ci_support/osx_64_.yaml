@@ -45,5 +45,7 @@ proj:
 - 7.1.0
 qt:
 - '5.12'
+target_platform:
+- osx-64
 zlib:
 - '1.2'

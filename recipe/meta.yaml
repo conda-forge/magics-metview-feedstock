@@ -68,9 +68,9 @@ test:
     - test -f $PREFIX/lib64/libMagPlus${SHLIB_EXT}  # [linux]
     - test -f $PREFIX/lib64/libMagPlusSingle${SHLIB_EXT}  # [linux]
     - test -f $PREFIX/lib64/libMagPlusDouble${SHLIB_EXT}  # [linux]
-    - test -f $PREFIX/lib64/libMagPlus${SHLIB_EXT}  # [osx]
-    - test -f $PREFIX/lib64/libMagPlusSingle${SHLIB_EXT}  # [osx]
-    - test -f $PREFIX/lib64/libMagPlusDouble${SHLIB_EXT}  # [osx]
+    - test -f $PREFIX/lib/libMagPlus${SHLIB_EXT}  # [osx]
+    - test -f $PREFIX/lib/libMagPlusSingle${SHLIB_EXT}  # [osx]
+    - test -f $PREFIX/lib/libMagPlusDouble${SHLIB_EXT}  # [osx]
 about:
   home: https://software.ecmwf.int/wiki/display/MAGP/
   license: Apache-2.0

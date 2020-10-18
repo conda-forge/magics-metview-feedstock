@@ -1,5 +1,5 @@
 {% set name = "Magics" %}
-{% set version = "4.4.1" %}
+{% set version = "4.5.0" %}
 
 package:
   name: magics-metview
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://confluence.ecmwf.int/download/attachments/3473464/{{ name }}-{{ version }}-Source.tar.gz
-  sha256: 28d3a7ac4c96a9f699fad0b28cd6a3cb9a8dc4f2a40dcafe271552cba3faec37
+  sha256: d6f5682772ba7012f845b0c37f7bbaf5e12e6e9cf36da7524b234d8dc073ad2c
   patches:
 
 build:
-  number: 2
+  number: 0
   skip: true  # [win]
   detect_binary_files_with_prefix: true
   run_exports:
@@ -65,10 +65,12 @@ test:
   commands:
     - printf "%s\n" "${MAGPLUS_HOME:?MAGPLUS_HOME is not set}"
     - which magjsonx
-    - test -f $PREFIX/lib/libMagPlus${SHLIB_EXT}  # [unix]
-    - test -f $PREFIX/lib/libMagPlusSingle${SHLIB_EXT}  # [unix]
-    - test -f $PREFIX/lib/libMagPlusDouble${SHLIB_EXT}  # [unix]
-
+    - test -f $PREFIX/lib64/libMagPlus${SHLIB_EXT}  # [linux]
+    - test -f $PREFIX/lib64/libMagPlusSingle${SHLIB_EXT}  # [linux]
+    - test -f $PREFIX/lib64/libMagPlusDouble${SHLIB_EXT}  # [linux]
+    - test -f $PREFIX/lib/libMagPlus${SHLIB_EXT}  # [osx]
+    - test -f $PREFIX/lib/libMagPlusSingle${SHLIB_EXT}  # [osx]
+    - test -f $PREFIX/lib/libMagPlusDouble${SHLIB_EXT}  # [osx]
 about:
   home: https://software.ecmwf.int/wiki/display/MAGP/
   license: Apache-2.0

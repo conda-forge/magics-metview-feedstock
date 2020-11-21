@@ -11,7 +11,7 @@ source:
   patches:
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
   detect_binary_files_with_prefix: true
   run_exports:
@@ -34,7 +34,6 @@ requirements:
     - {{ cdt('libxcb') }}  # [linux]
   host:
     - pkg-config
-    - boost
     - expat
     - glib
     - pango
@@ -42,7 +41,6 @@ requirements:
     - proj
     - eccodes
     - libnetcdf
-    - jinja2
     - qt
     - zlib
     # See https://conda-forge.org/docs/maintainer/knowledge_base.html#libgl

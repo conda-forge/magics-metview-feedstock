@@ -39,7 +39,7 @@ requirements:
     - pango
     - cairo
     - proj
-    - eccodes >=2.20.0
+    - eccodes >=2.21.0
     - libnetcdf
     - qt
     - zlib
@@ -50,7 +50,7 @@ requirements:
     - pango
     - cairo
     - proj
-    - eccodes >=2.20.0
+    - eccodes >=2.21.0
     - simplejson
     - libnetcdf
     - qt

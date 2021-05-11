@@ -1,17 +1,17 @@
 {% set name = "Magics" %}
-{% set version = "4.6.0" %}
+{% set version = "4.7.0" %}
 
 package:
   name: magics-metview
   version: {{ version }}
 
 source:
-  url: https://confluence.ecmwf.int/download/attachments/3473464/{{ name }}-{{ version }}-Source.tar.gz
-  sha256: 1ab56519f1ea30d4f86e49cb46e472d7eae0a8e28ea462e305c07046630e565e
+  url: https://confluence.ecmwf.int/download/attachments/121845745/{{ name }}-{{ version }}-Source.tar.gz
+  sha256: 90fcfa0ecb4088f9fe5f92fdfece46243b7c39d00562746b7ba7ab468e1e74b3
   patches:
 
 build:
-  number: 3
+  number: 0
   skip: true  # [win]
   detect_binary_files_with_prefix: true
   run_exports:

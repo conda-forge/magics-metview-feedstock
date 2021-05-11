@@ -22,7 +22,8 @@ cmake -DCMAKE_INSTALL_PREFIX=$PREFIX \
       -DREPLACE_TPL_ABSOLUTE_PATHS=$REPLACE_TPL_ABSOLUTE_PATHS \
       $SRC_DIR
 
-make -j $CPU_COUNT
+#make -j $CPU_COUNT
+make VERBOSE=1
 
 ctest --output-on-failure -j $CPU_COUNT
 make install

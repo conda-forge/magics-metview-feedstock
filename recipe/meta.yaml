@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://confluence.ecmwf.int/download/attachments/121845745/{{ name }}-{{ version }}-Source.tar.gz
-  sha256: 04ea13c8e7e1c4a4f1b2c219e8fc36d9972ee821fad40380e459130b0b20e342
+  sha256: 1fe38653e67c0b88f34f5a12251cda8a550bb85a77da3d897acde1dbd33e08ac
   patches:
 
 build:

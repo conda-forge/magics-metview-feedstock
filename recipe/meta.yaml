@@ -71,7 +71,7 @@ test:
     - test -f $PREFIX/lib/libMagPlusSingle${SHLIB_EXT}  # [osx]
     - test -f $PREFIX/lib/libMagPlusDouble${SHLIB_EXT}  # [osx]
 about:
-  home: https://software.ecmwf.int/wiki/display/MAGP/
+  home: https://confluence.ecmwf.int/display/MAGP/
   license: Apache-2.0
   license_file:
     - LICENSE_for_source_files

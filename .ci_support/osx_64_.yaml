@@ -31,14 +31,12 @@ pin_run_as_build:
     max_pin: x.x
   pango:
     max_pin: x.x
-  qt:
-    max_pin: x.x
   zlib:
     max_pin: x.x
 proj:
 - 9.0.0
-qt:
-- '5.12'
+qt_main:
+- '5.15'
 target_platform:
 - osx-64
 zip_keys:

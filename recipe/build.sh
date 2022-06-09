@@ -11,6 +11,13 @@ if [[ $(uname) == Linux ]]; then
   export REPLACE_TPL_ABSOLUTE_PATHS=1
 fi
 
+if [[ "${CONDA_BUILD_CROSS_COMPILATION:-}" == "1" && "${CROSSCOMPILING_EMULATOR}" == "" ]]; then
+    ls -l /usr/bin
+    export PKG_CONFIG_FLAGS="-DPKG_CONFIG_EXECUTABLE=/usr/bin/pkg-config"
+else
+    export PKG_CONFIG_FLAGS=""
+fi
+
 mkdir ../build && cd ../build
 
 cmake ${CMAKE_ARGS} -DCMAKE_INSTALL_PREFIX=$PREFIX \
@@ -20,6 +27,8 @@ cmake ${CMAKE_ARGS} -DCMAKE_INSTALL_PREFIX=$PREFIX \
       -DENABLE_METVIEW=1 \
       -DINSTALL_LIB_DIR=lib \
       -DREPLACE_TPL_ABSOLUTE_PATHS=$REPLACE_TPL_ABSOLUTE_PATHS \
+      $FIND_PROG_FLAGS \
+
       $SRC_DIR
 
 make -j $CPU_COUNT

@@ -22,6 +22,7 @@ requirements:
   build:
     - cmake
     - make
+    - pkg-config
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     # the CDTs below are needed when building with Metview enabled

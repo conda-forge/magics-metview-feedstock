@@ -1,11 +1,11 @@
-About magics-metview
-====================
+About magics-metview-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/magics-metview-feedstock/blob/main/LICENSE.txt)
 
 Home: https://confluence.ecmwf.int/display/MAGP/
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/magics-metview-feedstock/blob/main/LICENSE.txt)
 
 Summary: ECMWF's Meteorological plotting software Magics built with Metview enabled
 

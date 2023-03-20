@@ -27,7 +27,7 @@ macos_machine:
 pango:
 - '1.50'
 proj:
-- 9.1.1
+- 9.2.0
 qt_main:
 - '5.15'
 target_platform:

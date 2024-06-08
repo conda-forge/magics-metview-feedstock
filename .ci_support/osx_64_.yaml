@@ -31,7 +31,7 @@ macos_machine:
 pango:
 - '1.50'
 proj:
-- 9.4.0
+- '9.4'
 qt_main:
 - '5.15'
 target_platform:
@@ -40,4 +40,4 @@ zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
 zlib:
-- '1.2'
+- '1'

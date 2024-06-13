@@ -29,7 +29,7 @@ libnetcdf:
 pango:
 - '1.50'
 proj:
-- 9.4.0
+- '9.4'
 qt_main:
 - '5.15'
 target_platform:
@@ -40,4 +40,4 @@ zip_keys:
 - - c_stdlib_version
   - cdt_name
 zlib:
-- '1.2'
+- '1'

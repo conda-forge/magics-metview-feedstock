@@ -38,6 +38,7 @@ requirements:
     - expat
     - glib
     - pango
+    - xorg-xorgproto  # [not win]
     - cairo
     - proj
     - eccodes >=2.21.0
@@ -49,6 +50,7 @@ requirements:
   run:
     - expat
     - pango
+    - xorg-xorgproto  # [not win]
     - cairo
     - proj
     - eccodes >=2.21.0

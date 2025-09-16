@@ -31,7 +31,7 @@ macos_machine:
 pango:
 - '1'
 proj:
-- '9.6'
+- '9.7'
 qt_main:
 - '5.15'
 target_platform:

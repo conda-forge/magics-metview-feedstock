@@ -29,6 +29,7 @@ requirements:
     - pkg-config
     - expat
     - glib
+    - freetype
     - pango
     - xorg-xorgproto  # [not win]
     - cairo
@@ -42,6 +43,7 @@ requirements:
     - libgl-devel                    # [linux]
   run:
     - expat
+    - freetype
     - pango
     - xorg-xorgproto  # [not win]
     - cairo
